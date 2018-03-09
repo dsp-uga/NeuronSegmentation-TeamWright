@@ -27,6 +27,10 @@ def nmf(args):
 		# Read images from the dataset
 		path = d + 'images/'
 		V = td.images.fromtif(path, ext = 'tiff')
+		
+		# denoising and smoothing filters
+		V.median_filter()
+		V.gaussian_filter()
 
 		# Applying NMF on data
 		algorithm = NMF(k = 10, max_iter = 30, percentile = 99)
