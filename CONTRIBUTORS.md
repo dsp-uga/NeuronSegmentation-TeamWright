@@ -15,4 +15,5 @@
   - Implemented Non-negative Matrix Factorization
   - Worked on integrating with thunder packages
   - Naive segmentation
+  - Peer Programming
   - Readme, Wiki
